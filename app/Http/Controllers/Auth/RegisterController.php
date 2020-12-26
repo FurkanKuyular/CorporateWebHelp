@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use http\Env\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
@@ -58,18 +59,21 @@ class RegisterController extends Controller
     }
 
     /**
-     * Create a new user instance after a valid registration.
+     * @param \Symfony\Component\HttpFoundation\Request $request
      *
-     * @param  array  $data
-     * @return \App\Models\User
+     * @return mixed
      */
-    protected function create(array $data)
+    protected function register(\Symfony\Component\HttpFoundation\Request $request)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            'role' => $data['role'],
+        $user = $request->request->all();
+
+        User::create([
+            'name' => $user['name'],
+            'email' => $user['email'],
+            'password' => Hash::make($user['password']),
+            'role' => 'seller',
         ]);
+
+        return redirect('/seller_dashboard');
     }
 }
