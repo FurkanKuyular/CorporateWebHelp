@@ -18,6 +18,13 @@
                     </div>
                 </div>
             </div>
+            <div style="width:75%; padding-top: 50px;">
+                {!! $chartjs->render() !!}
+            </div>
         </div>
     </div>
+@endsection
+
+@section('jsfile')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
 @endsection

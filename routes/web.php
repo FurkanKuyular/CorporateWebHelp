@@ -23,4 +23,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/admin_dashboard', 'App\Http\Controllers\Admin\DashboardController@index')->middleware('role:admin');
 
+Route::get('/admin_dashboard', 'App\Http\Controllers\InvoiceController@getChartAdmin')->middleware('role:admin');
+
 Route::get('/seller_dashboard', 'App\Http\Controllers\Seller\DashboardController@index')->middleware('role:seller');
