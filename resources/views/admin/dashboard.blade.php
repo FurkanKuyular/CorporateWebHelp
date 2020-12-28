@@ -21,6 +21,10 @@
             <div style="width:75%; padding-top: 50px;">
                 {!! $chartjs->render() !!}
             </div>
+
+            <div style="padding-top: 50px;">
+                <a href="{{ route('excel.export', ['invoice' => $invoiceCount, 'order' => $orderCount])}}" class="btn btn-dark">Excel Export</a>
+            </div>
         </div>
     </div>
 @endsection

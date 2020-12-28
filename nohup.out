@@ -103,3 +103,49 @@ Environment modified. Restarting server...
 Environment modified. Restarting server...
 Environment modified. Restarting server...
 Environment modified. Restarting server...
+
+                                    
+  Command "server" is not defined.  
+                                    
+  Did you mean one of these?        
+      make:observer                 
+      serve                         
+                                    
+
+
+                                    
+  Command "server" is not defined.  
+                                    
+  Did you mean one of these?        
+      make:observer                 
+      serve                         
+                                    
+
+Starting Laravel development server: http://127.0.0.1:8865
+[Mon Dec 28 21:25:23 2020] 127.0.0.1:60244 [200]: /css/app.css
+[Mon Dec 28 21:25:23 2020] 127.0.0.1:60245 [200]: /js/app.js
+[Mon Dec 28 21:25:24 2020] 127.0.0.1:60247 [200]: /favicon.ico
+[Mon Dec 28 21:26:17 2020] 127.0.0.1:60273 [200]: /css/app.css
+[Mon Dec 28 21:26:17 2020] 127.0.0.1:60274 [200]: /js/app.js
+[Mon Dec 28 21:26:17 2020] 127.0.0.1:60277 [200]: /favicon.ico
+[Mon Dec 28 21:26:18 2020] 127.0.0.1:60282 [200]: /css/app.css
+[Mon Dec 28 21:26:19 2020] 127.0.0.1:60283 [200]: /js/app.js
+[Mon Dec 28 21:26:19 2020] 127.0.0.1:60286 [200]: /favicon.ico
+[Mon Dec 28 21:39:34 2020] 127.0.0.1:60390 [200]: /css/app.css
+[Mon Dec 28 21:39:34 2020] 127.0.0.1:60393 [200]: /js/app.js
+[Mon Dec 28 21:39:34 2020] 127.0.0.1:60396 [200]: /favicon.ico
+[Mon Dec 28 21:39:35 2020] 127.0.0.1:60399 [200]: /favicon.ico
+[Mon Dec 28 21:39:37 2020] 127.0.0.1:60405 [200]: /favicon.ico
+[Mon Dec 28 21:49:20 2020] 127.0.0.1:60462 [200]: /favicon.ico
+[Mon Dec 28 21:49:49 2020] 127.0.0.1:60467 [200]: /favicon.ico
+[Mon Dec 28 21:49:54 2020] 127.0.0.1:60472 [200]: /favicon.ico
+[Mon Dec 28 22:04:41 2020] 127.0.0.1:60607 [200]: /favicon.ico
+[Mon Dec 28 22:05:27 2020] 127.0.0.1:60616 [200]: /favicon.ico
+[Mon Dec 28 22:11:52 2020] 127.0.0.1:60660 [200]: /favicon.ico
+[Mon Dec 28 22:28:07 2020] 127.0.0.1:61403 [200]: /favicon.ico
+[Mon Dec 28 22:28:09 2020] 127.0.0.1:61412 [200]: /css/app.css
+[Mon Dec 28 22:28:10 2020] 127.0.0.1:61414 [200]: /js/app.js
+[Mon Dec 28 22:28:10 2020] 127.0.0.1:61417 [200]: /favicon.ico
+[Mon Dec 28 22:28:11 2020] 127.0.0.1:61422 [200]: /css/app.css
+[Mon Dec 28 22:28:11 2020] 127.0.0.1:61423 [200]: /js/app.js
+[Mon Dec 28 22:28:12 2020] 127.0.0.1:61426 [200]: /favicon.ico

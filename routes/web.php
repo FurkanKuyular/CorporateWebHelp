@@ -30,3 +30,5 @@ Route::get('/seller_dashboard', [\App\Http\Controllers\Seller\DashboardControlle
 Route::get('/seller_dashboard', [\App\Http\Controllers\InvoiceController::class, 'getChartSeller'])->middleware('role:seller')->name('sellerDashboard');
 
 Route::get('/mail-send', [\App\Http\Controllers\Mail\MailController::class, 'sendChartMail'])->name('web.send.mail');
+
+Route::get('/excel-export', [\App\Http\Controllers\ExcelController::class, 'export'])->name('excel.export');

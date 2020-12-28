@@ -32,7 +32,7 @@ class InvoiceController extends Controller
             ])
             ->options([]);
 
-        return view('admin.dashboard', compact('chartjs'));
+        return view('admin.dashboard', compact('chartjs', 'invoiceCount', 'orderCount'));
     }
 
     /**
