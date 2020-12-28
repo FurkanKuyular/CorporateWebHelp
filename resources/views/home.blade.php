@@ -13,8 +13,13 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+                        @if(\Illuminate\Support\Facades\Auth::user()->role == 'admin')
+                            <a href="{{ route('adminDashboard') }}" type="button" class="btn btn-dark">
+                                {{ucwords(__(\Illuminate\Support\Facades\Auth::user()->role)). ' Panel'}}</a>
+                        @else
+                            <a href="{{ route('sellerDashboard') }}" type="button" class="btn btn-dark">
+                                {{ucwords(__(\Illuminate\Support\Facades\Auth::user()->role)). ' Panel'}}</a>
+                        @endif
                 </div>
             </div>
         </div>

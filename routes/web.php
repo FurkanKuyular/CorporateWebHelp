@@ -21,8 +21,12 @@ Route::get('/', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/admin_dashboard', 'App\Http\Controllers\Admin\DashboardController@index')->middleware('role:admin');
+Route::get('/admin_dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->middleware('role:admin')->name('adminDashboard');
 
-Route::get('/admin_dashboard', 'App\Http\Controllers\InvoiceController@getChartAdmin')->middleware('role:admin');
+Route::get('/admin_dashboard', [\App\Http\Controllers\InvoiceController::class, 'getChartAdmin'])->middleware('role:admin')->name('adminDashboard');
 
-Route::get('/seller_dashboard', 'App\Http\Controllers\Seller\DashboardController@index')->middleware('role:seller');
+Route::get('/seller_dashboard', [\App\Http\Controllers\Seller\DashboardController::class, 'index'])->middleware('role:seller')->name('sellerDashboard');
+
+Route::get('/seller_dashboard', [\App\Http\Controllers\InvoiceController::class, 'getChartSeller'])->middleware('role:seller')->name('sellerDashboard');
+
+Route::get('/mail-send', [\App\Http\Controllers\Mail\MailController::class, 'sendChartMail'])->name('web.send.mail');
