@@ -149,3 +149,7 @@ Starting Laravel development server: http://127.0.0.1:8865
 [Mon Dec 28 22:28:11 2020] 127.0.0.1:61422 [200]: /css/app.css
 [Mon Dec 28 22:28:11 2020] 127.0.0.1:61423 [200]: /js/app.js
 [Mon Dec 28 22:28:12 2020] 127.0.0.1:61426 [200]: /favicon.ico
+Starting Laravel development server: http://127.0.0.1:8865
+[Mon Dec 28 22:48:25 2020] 127.0.0.1:50771 [200]: /css/app.css
+[Mon Dec 28 22:48:26 2020] 127.0.0.1:50772 [200]: /js/app.js
+[Mon Dec 28 22:48:26 2020] 127.0.0.1:50781 [200]: /favicon.ico
