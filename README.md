@@ -10,3 +10,5 @@ Again in terminal run "nohup php artisan serve &", if you want you can add port 
 Also you can create Invoices and Users with seeders "php artisan db:seed"
 
 Please make your settings in environment file for mail and mysql
+
+Mysql db name : corporatewebhelp
